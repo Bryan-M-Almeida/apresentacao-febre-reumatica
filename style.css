@@ -1,0 +1,36 @@
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8fafc;
+        }
+        .slide {
+            display: none;
+            animation: fadeIn 0.5s ease-in-out;
+        }
+        .active-slide {
+            display: block;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .nav-btn {
+            transition: all 0.2s ease;
+        }
+        .nav-btn:hover {
+            transform: scale(1.05);
+        }
+        .criteria-item {
+            position: relative;
+            padding-left: 1.75rem;
+        }
+        .criteria-item:before {
+            content: "•";
+            position: absolute;
+            left: 0.75rem;
+            color: #3b82f6;
+            font-weight: bold;
+        }
+        .major:before {
+            color: #ef4444;
+        }
